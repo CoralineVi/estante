@@ -1,0 +1,62 @@
+body {
+    background-color: #232323;
+    color: #ddd;
+    font: normal 15px Arial;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .pdfs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .pdfs a {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .pdfs a:hover {
+    transform: scale(1.05);
+  }
+  
+  .pdfs a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .pdfs a:hover img {
+    filter: grayscale(0%);
+  }
+  
